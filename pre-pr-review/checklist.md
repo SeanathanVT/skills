@@ -74,5 +74,5 @@ Prefer the project's configured tooling. Otherwise, by file type:
 
 ## Prose
 
-- Em-dashes in any added text.
+- Em-dashes in added text, if the project or user avoids them.
 - AI tells: filler openers, "robust", "seamless", "leverage", "delve", "it's worth noting", inflated summaries, needless bold.

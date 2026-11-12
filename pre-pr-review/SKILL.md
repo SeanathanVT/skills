@@ -5,7 +5,7 @@ description: Use when work is finished and the user is about to open a PR, merge
 
 # Pre-PR Review
 
-Last-pass review before a PR: report verified findings, pause, fix and re-review until clean. Never commit.
+Last-pass review before a PR: report verified findings, pause, fix and re-review until clean. Project and user rules (CONTRIBUTING, AGENTS.md, CLAUDE.md, saved preferences) override these defaults.
 
 ## 1. Scope
 
@@ -40,7 +40,7 @@ The report is exactly:
 
 ## 6. Fix loop
 
-Apply only approved items, in the project's style. Re-run steps 3 and 4 on everything the fixes touched. Repeat until there are no findings. Then `git add` the changes and print a commit message in the project's convention (Conventional Commits if none), with any attribution trailer the user or harness requires. Never commit or push.
+Apply only approved items, in the project's style. Re-run steps 3 and 4 on everything the fixes touched. Repeat until there are no findings. Then `git add` the changes and print a commit message in the project's convention (Conventional Commits if none), with any attribution trailer the user or harness requires. Commit or push only if the user asks.
 
 ## Red flags
 

@@ -1,6 +1,6 @@
 # pre-pr-review
 
-An agent skill for the last pass before opening a PR. It reviews the branch's changes, reports verified findings, waits for approval, then fixes, re-reviews until clean, and stages the result with a drafted commit message. It never commits.
+An agent skill for the last pass before opening a PR. It reviews the branch's changes, reports verified findings, waits for approval, then fixes, re-reviews until clean, and stages the result with a drafted commit message. It commits only if you ask, and project or user rules override its defaults.
 
 ## Checks
 
@@ -13,7 +13,7 @@ An agent skill for the last pass before opening a PR. It reviews the branch's ch
 - Comments: brief, only the non-obvious why, no iteration narrative
 - Hygiene: no local paths, debug leftovers, or references to uncommitted notes
 - CHANGELOG: released sections untouched, `[Unreleased]` holds only the net delta
-- Prose: no em-dashes or AI tells
+- Prose: AI tells, and em-dashes where the project or user avoids them
 - Lint and format via the project's own tooling, else per-language defaults
 
 Full criteria: [checklist.md](checklist.md).
