@@ -47,8 +47,8 @@ A skill is this folder, placed in a directory the agent harness scans. Symlink i
 `~/.agents/skills/` is shared by Codex, Gemini, Copilot, and OpenCode; `~/.claude/skills/` by Claude Code and OpenCode. Use a shared directory if you run more than one harness, otherwise the harness-specific one. From a clone of this repo, at its root:
 
 ```bash
-ln -s "$PWD/skills/pre-pr-review" ~/.claude/skills/pre-pr-review   # Claude Code, OpenCode
-ln -s "$PWD/skills/pre-pr-review" ~/.agents/skills/pre-pr-review   # Codex, Gemini, Copilot, OpenCode
+ln -s "$PWD/pre-pr-review" ~/.claude/skills/pre-pr-review   # Claude Code, OpenCode
+ln -s "$PWD/pre-pr-review" ~/.agents/skills/pre-pr-review   # Codex, Gemini, Copilot, OpenCode
 ```
 
 Use a copy instead of a symlink if the harness runs on a different machine or container than the one where the source path exists. Restart the session (or reload skills) afterward.
@@ -57,7 +57,7 @@ Use a copy instead of a symlink if the harness runs on a different machine or co
 
 Paste this into any agent session:
 
-> Install the agent skill at `https://github.com/SeanathanVT/skills/tree/main/skills/pre-pr-review` by following the "Instructions for agents" section of its README.md.
+> Install the agent skill at `https://github.com/SeanathanVT/skills/tree/main/pre-pr-review` by following the "Instructions for agents" section of its README.md.
 
 ### Instructions for agents
 

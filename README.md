@@ -6,7 +6,7 @@ Each skill is a folder under [`skills/`](skills/) following the [Agent Skills](h
 
 | Skill | Use it when |
 | --- | --- |
-| [pre-pr-review](skills/pre-pr-review/) | Work is done and you want a last-pass review, cleanup, and doc harmonization before opening a PR |
+| [pre-pr-review](pre-pr-review/) | Work is done and you want a last-pass review, cleanup, and doc harmonization before opening a PR |
 
 ## Install
 
