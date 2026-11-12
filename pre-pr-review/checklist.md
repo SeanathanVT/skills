@@ -8,7 +8,7 @@ Prefer the project's configured tooling. Otherwise, by file type:
 
 | Files | Lint / format | Complexity |
 | --- | --- | --- |
-| Shell | `shellcheck`, `shfmt -d` | `lizard -C 10` |
+| Shell | `shellcheck`, `shfmt -d` | by hand: 1 + each `if`, `elif`, `while`, `until`, `for`, `case` arm, `&&`, `\|\|` |
 | Python | `ruff check`, `ruff format --check` | `lizard -C 10` or `ruff check --select C901` |
 | Markdown | `markdownlint-cli2` | |
 | YAML / Ansible | `yamllint`, `ansible-lint` | |
@@ -17,7 +17,7 @@ Prefer the project's configured tooling. Otherwise, by file type:
 | JS / TS | project `eslint` / `prettier --check` | `lizard -C 10` |
 | Go, Java, Kotlin, C/C++, others | the language's standard linter | `lizard -C 10` |
 
-`lizard` (`pip install lizard`) covers most languages. Use the project's lint rules over these defaults where they conflict.
+`lizard` (`pip install lizard`) covers most languages, but not shell. A complexity tool that reports 0 functions for code that has them did not parse it; count by hand. Use the project's lint rules over these defaults where they conflict.
 
 ## Correctness
 
